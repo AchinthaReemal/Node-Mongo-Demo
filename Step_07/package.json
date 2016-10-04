@@ -1,0 +1,17 @@
+{
+  "name": "Node-Mongo-Demo-Step_07",
+  "version": "0.0.7",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "express": "~4.14.0",
+    "mongodb": "~2.2.10"
+  }
+}
