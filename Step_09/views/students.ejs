@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Node Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h2>Registered Students</h2>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Index
+        </th>
+        <th>
+            Address
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <% for(var i = 0; i < students.length; i++) { %>
+    <tr>
+        <td>
+            <%= students[i].name %>
+        </td>
+        <td>
+            <%= students[i].index %>
+        </td>
+        <td>
+            <%= students[i].address %>
+        </td>
+    </tr>
+    <% } %>
+    </tbody>
+</table>
+
+</body>
+</html>
