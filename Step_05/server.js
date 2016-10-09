@@ -2,17 +2,17 @@
  * Created by achintha on 10/4/16.
  */
 
-const express = require('express');
-const app = express();
+var express = require('express');
+var app = express();
 
-app.listen(3000, () => {
+app.listen(3000, function () {
     console.log('Demo listening on port 3000');
 });
 
-app.get('/', (req, res) => {
+app.get('/', function (req, res) {
     res.sendFile(__dirname + '/index.html');
 });
 
-app.post('/register', (req, res) => {
+app.post('/register', function (req, res) {
     console.log('POST successful');
 });
